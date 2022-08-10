@@ -5,7 +5,7 @@ export const StyledApp = styled.section`
   width: 100%;
   left: 0;
   top: 0;
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   max-width: 375px;
   display: flex;

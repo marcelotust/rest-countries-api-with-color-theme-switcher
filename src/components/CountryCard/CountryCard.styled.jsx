@@ -15,6 +15,7 @@ export const StyledCard = styled.li`
 
 export const StyledContainer = styled.div`
     padding: 18px;
+    padding-top: 0px;
 `;
 
 export const StyledUL = styled.ul`
@@ -36,6 +37,8 @@ export const StyledLI = styled.li`
 `;
 
 export const StyledImg = styled.img`
-  width: 264px;
-  height: 160px;
+  max-width: 100%;
+  max-height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 `;

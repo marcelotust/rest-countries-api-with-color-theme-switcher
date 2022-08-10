@@ -5,16 +5,19 @@ import Search from "../Search/Search";
 import { StyledPage, StyledContainer } from "./PageList.styled";
 import { useRESTCountries } from "../../hooks/useRESTCountries";
 
+let countries = [];
+
 const PageList = () => {
   const { dataResponse, getRESTCountries } = useRESTCountries();
-  
 
   useEffect(() => {
     getRESTCountries("all");
   }, []);
 
   useEffect(() => {
-    console.log(">>>" + dataResponse);
+    if (dataResponse && dataResponse.length > 0) {
+      countries = dataResponse;
+    }
   }, [dataResponse]);
 
   return (
@@ -22,7 +25,7 @@ const PageList = () => {
       <StyledContainer>
         <Search />
         <Filter />
-        <CountriesList />
+        {countries.length > 0 && <CountriesList countries={countries} />}
       </StyledContainer>
     </StyledPage>
   );

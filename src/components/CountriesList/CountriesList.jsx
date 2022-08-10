@@ -1,18 +1,26 @@
-import CountryCard from "../CountryCard/CountryCard"
-import { StyledList } from "./CountriesList.styled"
+import CountryCard from "../CountryCard/CountryCard";
+import { StyledList } from "./CountriesList.styled";
 
-const CountriesList = () => {
+const CountriesList = (props) => {
+  console.log("...... " + props.countries.length);
+  return (
+    <StyledList>
+      {props.countries.map((country) => (
+        <CountryCard
+          key={country.name.common}
+          imgURL={country.flags.svg}
+          name={country.name.common}
+          population={country.population}
+          region={country.region}
+          capital={country.capital}
+        />
+      ))}
+    </StyledList>
+  );
+};
 
-    return (
-        <StyledList>
-                <CountryCard
-                    imgURL="../assets/images/Flag_of_Brazil.svg"
-                    name="United States of America"
-                    population="323,947,000"
-                    region="Americas"
-                    capital="Washington, D.C."
-                    />
-                <CountryCard
+export default CountriesList;
+/*<CountryCard
                     imgURL="../assets/images/Flag_of_Brazil.svg"
                     name="United States of America"
                     population="323,947,000"
@@ -25,9 +33,4 @@ const CountriesList = () => {
                     population="323,947,000"
                     region="Americas"
                     capital="Washington, D.C."
-                    />
-        </StyledList>
-    )
-  }
-  
-  export default CountriesList
+                    />*/
