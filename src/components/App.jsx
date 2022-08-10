@@ -1,5 +1,5 @@
 import Header from "./Header/Header";
-import PageList from "./PageList/PageList";
+import PageList from "./pages/PageList/PageList";
 import { StyledApp } from "./App.styled";
 
 const App = () => {
