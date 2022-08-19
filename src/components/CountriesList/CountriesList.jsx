@@ -7,6 +7,7 @@ const CountriesList = (props) => {
       {props.countries.map((country) => (
         <CountryCard
           key={country.name.common}
+          id={country.name.common}
           imgURL={country.flags.svg}
           name={country.name.common}
           population={country.population}

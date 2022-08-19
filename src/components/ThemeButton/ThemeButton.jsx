@@ -1,11 +1,11 @@
 import { StyledButton } from "./ThemeButton.styled";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon } from "@fortawesome/free-regular-svg-icons";
 
-const ThemeButton = () => {
+const ThemeButton = (props) => {
 
   return (
-    <StyledButton>
+    <StyledButton onClick={props.themeToggler}>
       <FontAwesomeIcon icon={faMoon} />
       <p>Dark Mode</p>
     </StyledButton>

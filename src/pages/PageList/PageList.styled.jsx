@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledPage = styled.div`
-  background-color: #f2f2f2;
+  background-color: ${({ theme }) => theme.HighlightedBackground};;
   width: 100%;
   height: 100%;
   display: flex;

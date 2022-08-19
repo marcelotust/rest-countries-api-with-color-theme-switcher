@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  background-color: white;
+  background-color: ${({ theme }) => theme.HighlightedBackground};
   width: 100%;
   height: 80px;
   display: flex;

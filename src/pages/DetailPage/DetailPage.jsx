@@ -11,6 +11,8 @@ const DetailPage = () => {
 
   useEffect(() => {
     getRESTCountries(`name/${params.countryId}`);
+    //getRESTCountries(`alpha?codes=${params.countryId}`);
+    
   }, []);
 
   useEffect(() => {

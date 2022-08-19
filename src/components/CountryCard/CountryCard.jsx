@@ -5,7 +5,7 @@ const CountryCard = (props) => {
   return (
       
       <StyledCard>
-        <StyledLink to={`/detail/${props.name}`}>
+        <StyledLink to={`/detail/${props.id}`}>
         <StyledImg src={props.imgURL} alt={`${props.name} Flag`} />
         <StyledContainer>
             <StyledH2>{props.name}</StyledH2>

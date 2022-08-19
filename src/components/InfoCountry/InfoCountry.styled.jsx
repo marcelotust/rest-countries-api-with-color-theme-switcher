@@ -19,7 +19,7 @@ export const StyledLI = styled.li`
 `;
 
 export const StyledImg = styled.img`
-  max-width: 100%;
+  max-width: 320px;
   max-height: 229px;
   border-radius: 10px;
 `;

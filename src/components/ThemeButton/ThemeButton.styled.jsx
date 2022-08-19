@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledButton = styled.button`
   border: none;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.HighlightedBackground};
   font-size: 12px;
   font-weight: 300;
   height: 30px;
@@ -12,6 +12,6 @@ export const StyledButton = styled.button`
   padding: 10px;
   &:hover {
     cursor: pointer;
-    color: red;
+    //color: red;
   }
 `;
