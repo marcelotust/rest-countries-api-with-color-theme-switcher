@@ -13,3 +13,10 @@ export const StyledApp = styled.section`
   align-items: center;
   background-color: #dddddd;
 `;
+
+export const StyledMain = styled.main`
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+`;

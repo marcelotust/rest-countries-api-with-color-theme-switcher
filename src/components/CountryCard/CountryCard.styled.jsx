@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledCard = styled.li`
@@ -14,14 +15,28 @@ export const StyledCard = styled.li`
 `;
 
 export const StyledContainer = styled.div`
-    padding: 18px;
-    padding-top: 0px;
+  padding: 18px;
+  padding-top: 0px;
 `;
 
 export const StyledUL = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  &:active {
+    //text-decoration: none;
+  }
+  &:link {
+    //text-decoration: none;
+  }
+  &:visited {
+    //text-decoration: none;
+  }
 `;
 
 export const StyledH2 = styled.h2`
