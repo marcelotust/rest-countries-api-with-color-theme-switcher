@@ -12,12 +12,11 @@ const DetailPage = () => {
   useEffect(() => {
     getRESTCountries(`name/${params.countryId}`);
     //getRESTCountries(`alpha?codes=${params.countryId}`);
-    
   }, []);
 
   useEffect(() => {
     if (dataResponse && dataResponse.length > 0) {
-        console.log(">>>>>>  "+ dataResponse[0]);
+      console.log(">>>>>>  " + dataResponse[0]);
       setCountry(dataResponse[0]);
     }
   }, [dataResponse]);
@@ -25,7 +24,7 @@ const DetailPage = () => {
   return (
     <section>
       <Link to="/list">Back</Link>
-      {country && <InfoCountry country={country} /> }
+      {country && <InfoCountry country={country} />}
     </section>
   );
 };

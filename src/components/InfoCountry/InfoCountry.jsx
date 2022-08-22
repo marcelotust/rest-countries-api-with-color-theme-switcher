@@ -36,19 +36,21 @@ const InfoCountry = (props) => {
             <b>Capital:</b> {props.country.capital}
           </StyledLI>
           <StyledLI>
-            <b>Top Level Domain:</b> {props.country.tld[
-                Object.keys(props.country.tld)[0]
-              ]}
+            <b>Top Level Domain:</b>{" "}
+            {props.country.tld[Object.keys(props.country.tld)[0]]}
           </StyledLI>
           <StyledLI>
             <b>Currencies: </b>
             {Object.keys(props.country.currencies).map(
-              (currency, i) => `${i > 0 ? ", ": ""}${props.country.currencies[currency].name}`
+              (currency, i) =>
+                `${i > 0 ? ", " : ""}${props.country.currencies[currency].name}`
             )}
           </StyledLI>
           <StyledLI>
-            <b>Languages:</b> {Object.keys(props.country.languages).map(
-              (language, i) => `${i > 0 ? ", ": ""}${props.country.languages[language]}`
+            <b>Languages:</b>{" "}
+            {Object.keys(props.country.languages).map(
+              (language, i) =>
+                `${i > 0 ? ", " : ""}${props.country.languages[language]}`
             )}
           </StyledLI>
         </StyledUL>

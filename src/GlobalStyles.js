@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
      color: ${({ theme }) => theme.color};
      transition: all 0.50s linear; 
   }
-
+  
   input, button {
     font-family: 'Nunito Sans', sans-serif;
     color: ${({ theme }) => theme.color};
